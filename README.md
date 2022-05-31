@@ -12,7 +12,7 @@
 
 ## Le projet
 
-Ce projet industriel s'inscrit dans la continuité du projet français d'enfouissement des déchets radioactifs : Le projet CIGEO, en partenariat avec l'ANDRA (Agence national pour la gestion des déchets radioactifs). Le but étant d'utiliser le robot SPOT (Boston Dynamics), pour mener des études dans les galeries souterraines de leur site de recherche à Bure en y effectuant des rondes régulières pendant la nuit, lorsque les travailleurs ne sont pas sur place.
+Ce projet industriel s'inscrit dans la continuité du projet français d'enfouissement des déchets radioactifs : Le projet CIGEO, en partenariat avec l'ANDRA (Agence national pour la gestion des déchets radioactifs). Le but étant d'utiliser le robot SPOT (Boston Dynamics) pour mener des études dans les galeries souterraines de leur site de recherche à Bure en y effectuant des rondes régulières pendant la nuit, lorsque les travailleurs ne sont pas sur place.
 
 Différentes solutions ont donc été développé afin de répondre à ces besoins :
 
@@ -22,8 +22,12 @@ Le robot étant amené à effectuer des patrouilles dans les galeries, une solut
 
 ![slam.png](./ressources/slam.png)
 
+*Capture d'écran de la carte d'une partie de galerie produite par SPOT*
+
 ## L'application
 
 L'application développée pendant l'année permettra aux opérateurs de superviser SPOT lors de ses déplacements dans les galeries, en permettant notamment de localiser le robot et de le controler depuis un poste de contrôle à la surface en temps réel.
 
 ![app.png](./ressources/app.png)
+
+*Capture d'écran de l'application : les murs en rouge et bleu, SPOT en jaune et en vert les codes QR permettant de replacer le robot sur la carte*
