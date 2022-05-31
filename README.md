@@ -12,13 +12,17 @@
 
 ## Le projet
 
-Ce projet industriel s'inscrit dans la continuité du projet français d'enfouissement des déchets radioactifs : Le projet CIGEO, en partenariat avec l'ANDRA (Agence national pour la gestion des déchets radioactifs). Le but étant d'utiliser le robot SPOT (Boston Dynamics) pour mener des études dans les galeries souterraines de leur site de recherche à Bure en y effectuant des rondes régulières pendant la nuit, lorsque les travailleurs ne sont pas sur place.
+Ce projet en partenariat avec l'ANDRA s'inscrit dans le contexte du projet CIGEO. Le projet CIGEO est le projet français d'enfouissement en profondeur des déchets nucléaires. Depuis 1991 des études sont menées dans un laboratoire souterrain situé près de la commune de Bure dans le Grand-Est.
+C'est dans ce laboratoire que notre projet doit trouver son application. 
 
-Différentes solutions ont donc été développé afin de répondre à ces besoins :
+Prendre des mesures de convergence de roche et de surveillance des éboulement post-creusement ne peux se faire régulièrement et aisément avec du personnel humain. En effet, par sécurité et praticité, les mesures sont à prendre la nuit pour éviter que les travaux journaliers ne perturbent les capteurs.
+La solution que nous avons proposé s'appuie sur le robot SPOT de Boston Dynamics. Nous avons ajouter au cour du projet une couche haut-niveau de contrôle et d'autonomie au robot afin qu'il puisse mener aisément ses missions de ronde et de mesure.
+
+Différents défis techniques se sont dressés face à nous, le premier étant de situer le robot dans son environement sans GPS, nous avons implémenté un algorithme de SLAM. Le second défi fut de pouvoir donner facilement des missions complexes (ronde, stop and go pour prendre des mesures) au robot. Nous avons pour cela développé une interface de contrôle.
 
 ## SLAM (Simultaneous Localisation And Mapping)
 
-Le robot étant amené à effectuer des patrouilles dans les galeries, une solution de localisation et de cartographie en temps réel à été implémenté sur le robot SPOT (la technologie SLAM). Ainsi le robot est capable de produire une carte des lieux dans lesquels il se déplace et de s'y repérer.
+Le robot étant amené à effectuer des patrouilles dans les galeries, une solution de localisation et de cartographie en temps réel a été implémenté sur le robot SPOT (Algorithme de SLAM). Ainsi le robot est capable de produire une carte des lieux dans lesquels il se déplace et de s'y repérer.
 
 ![slam.png](./ressources/slam.png)
 
@@ -26,7 +30,7 @@ Le robot étant amené à effectuer des patrouilles dans les galeries, une solut
 
 ## L'application
 
-L'application développée pendant l'année permettra aux opérateurs de superviser SPOT lors de ses déplacements dans les galeries, en permettant notamment de localiser le robot et de le controler depuis un poste de contrôle à la surface en temps réel.
+L'application développée pendant l'année permettra aux opérateurs de superviser SPOT lors de ses déplacements dans les galeries, en permettant notamment de localiser le robot et de le controler depuis un poste de contrôle à la surface en temps réel. Elle permet également de lui donner des missions prédefinies.
 
 ![app.png](./ressources/app.png)
 
